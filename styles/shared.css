@@ -1,4 +1,4 @@
-/* navigation bar */
+/* navigation bar - START*/
 .primary-nav {
   display: flex;
   flex-wrap: wrap;
@@ -6,14 +6,17 @@
   align-items: center;
   padding: 0px 30px;
 }
+
 .nav-left,     /*left & right sides*/
 .nav-right {
   display: flex;
   align-items: center;
 }
+
 .nav-left {
   margin-top: -40px; /*  reduce big space on the top of nav due to the logo */
 }
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -25,9 +28,11 @@
   letter-spacing: 0.02rem;
   color: #20424b;
 }
+
 .nav-links li {
   padding: 0px 20px;
 }
+
 .nav-links a {
   text-decoration: none;
   color: inherit;
@@ -35,20 +40,24 @@
   padding: 10px;
   border-radius: 4px;
 }
-.nav-btns {
+
+.nav-btn {
   display: flex;
   margin-left: 20px;
 }
+
 .nav-left img {
   max-width: 180px;
   height: auto;
   min-height: unset;
 }
+
 .nav-links li a:hover {
   background-color: #14f25d;
 }
+/* navigation bar - END*/
 
-/* popup css */
+/* popup css  - START*/
 .table-btn {
   align-self: center;
   background-color: #20424b;
@@ -58,7 +67,6 @@
   cursor: pointer;
   width: 184px;
   border-radius: 4px;
- 
 
   color: #ffffff;
   font-size: 20px;
@@ -67,6 +75,7 @@
   text-align: center;
   text-decoration: none;
 }
+
 .table-btn:hover {
   color: #14f25d;
 }
@@ -81,6 +90,7 @@
   height: 100vh;
   z-index: 10;
 }
+
 .popup:target {
   display: block;
 }
@@ -94,6 +104,7 @@
   margin: 0;
   border-radius: 0px;
 }
+
 .popup-content h2 {
   font-size: 36px;
   font-weight: 400;
@@ -101,19 +112,23 @@
   text-align: center;
   color: #20424b;
 }
+
 .popup-content form div {
   padding: 20px;
   display: block;
 }
+
 .popup-content form {
   padding: 10px;
 }
+
 .popup-content form label {
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
   color: #20424b;
 }
+
 .popup-content form input,
 .popup-content form select {
   width: 100%;
@@ -138,9 +153,11 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .booknow-btn:hover {
   color: #14f25d;
 }
+
 .close-btn {
   position: absolute;
   top: 20px;
@@ -157,8 +174,9 @@
 .close-btn:hover img {
   content: url("/Images/clsoe\ red.svg");
 }
+/* popup css  - END */
 
-/* thankyou message css */
+/* thankyou message css - START */
 .thank-message {
   display: block;
   padding: 50px;
@@ -166,6 +184,7 @@
   margin: 100px;
   background: #20424b;
 }
+
 .thank-message h1 {
   font-size: 60px;
   font-weight: 400px;
@@ -193,6 +212,8 @@
 
   width: 150px;
 }
+
 .message_close-btn:hover {
   color: #14f25d;
 }
+/* thankyou message css - END */
