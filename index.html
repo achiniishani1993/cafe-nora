@@ -15,12 +15,13 @@
 
     <!-- normalized css -->
     <link rel="stylesheet" href="/styles/normalize.css" />
-    <!-- css link -->
+     <!-- shared css link -->
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <!-- index css link -->
     <link rel="stylesheet" href="/styles/index.css" />
-    <!-- shared css link -->
-     <link rel="stylesheet" href="/styles/shared.css" />
   </head>
   <body>
+    <!-- navigation bar -START -->
     <nav>
       <div class="primary-nav">
         <div class="nav-left">
@@ -36,7 +37,8 @@
             <li><a href="/pages/menu.html">See Our Menu</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
-          <div class="nav-btns">
+          <!-- Booking popup - START -->
+          <div class="nav-btn">
             <a href="#popupForm" class="table-btn">Book a Table</a>
             <div id="popupForm" class="popup">
               <div class="popup-content">
@@ -107,8 +109,10 @@
               </div>
             </div>
           </div>
+          <!-- Booking popup - END -->
         </div>
       </div>
     </nav>
+    <!-- navigation bar -END -->
   </body>
 </html>
