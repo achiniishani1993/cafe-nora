@@ -1,10 +1,9 @@
 /* navigation bar - START*/
 .primary-nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between; /*left group on left, right group on right  */
   align-items: center;
-  padding: 0px 30px;
+  padding: 0px 20px;
 }
 
 .nav-left,     /*left & right sides*/
@@ -30,14 +29,14 @@
 }
 
 .nav-links li {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  padding: 10px;
+  padding: 20px;
   border-radius: 4px;
 }
 
