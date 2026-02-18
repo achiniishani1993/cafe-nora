@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  display: grid;
+
+  height: 100vh;
+
+  grid-template-areas:
+    "nav "
+    "head"
+    "main"
+    "footer";
+
+  grid-template-rows: 100px auto 1fr auto;
+  grid-template-columns: 100%;
+  grid-template-columns: auto;
+}
+nav {
+  grid-area: nav;
+}
+
+header {
+  grid-area: head;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
