@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* add grid layout to the home page -to have more responsive layout */
+
 body {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
@@ -37,4 +39,74 @@ main {
 
 footer {
   grid-area: footer;
+}
+
+
+  /* header styles  */
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 0.02rem;
+    color: #20424B;
+  }
+
+.greenText{
+   font-size: 64px;
+   line-height: 1;
+   letter-spacing: 0.02rem;
+   color: #14F25D;
+}
+
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    width: 1512px;
+    height: 590px;
+    margin: 0 auto;
+}
+
+  /* Style each of the sides 
+*/
+.slide {
+    float: left;
+    width: 1508px;
+    height: 590px;
+   
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(1508px * 4);
+
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 10s ease infinite;
+}
+
+/* Define the animation 
+  for the slideshow */
+@keyframes slide {
+
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-1508px * 1);
+    }
+
+    60% {
+        margin-left: calc(-1508px * 2);
+    }
+
+    80% {
+        margin-left: calc(-1508px * 3);
+    }
 }
