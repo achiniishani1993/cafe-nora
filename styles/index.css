@@ -111,3 +111,20 @@ h1 {
   }
 }
 /* Slide show - START */
+
+
+section {
+  padding: 80px 0;          /* Top + Bottom spacing */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 45px 35px;          /* Left + Right spacing */
+  align-items: center;
+}
