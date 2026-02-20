@@ -21,7 +21,6 @@ body {
 
   grid-template-rows: 100px auto 1fr auto;
   grid-template-columns: 100%;
-  grid-template-columns: auto;
 }
 nav {
   grid-area: nav;
@@ -64,26 +63,25 @@ h1 {
 /* Styling the area of the slides */
 
 #slideshow {
+  width: 100%;
+  height: calc(100vh - 100px - 80px);
   overflow: hidden;
-  width: 1512px;
-  height: 590px;
-  margin: 0 auto;
 }
 
 /* Style each of the sides */
 
 .slide {
   float: left;
-  width: 1508px;
-  height: 590px;
+  width: 100vw;
+  height: 100%;
 }
 
 /* Add animation to the slides */
 
 .slide-wrapper {
-  /* Calculate the total width on the basis of number of slides */
-
-  width: calc(1508px * 4);
+  display: flex;
+  width: 400%;
+  height: 100%;
 
   /* Specify the animation with the duration and speed */
 
@@ -110,11 +108,17 @@ h1 {
     margin-left: calc(-1508px * 3);
   }
 }
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Slide show - START */
 
 
 section {
-  padding: 80px 0;          /* Top + Bottom spacing */
+  padding: 80px 0;          /* Top + Bottom spacing  */
 }
 
 .container {
@@ -125,10 +129,10 @@ section {
   max-width: 1200px;
   margin: 0 auto;
 
-  padding: 45px 35px;          /* Left + Right spacing */
+  padding: 45px 35px;         /*  Left + Right spacing  */
   align-items: center;
 }
-
+ 
 .text {
   padding: 20px;
 }
@@ -168,3 +172,4 @@ section {
   margin: 0 auto;
   border-radius: 4px;
 }
+
