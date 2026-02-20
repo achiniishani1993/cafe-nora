@@ -22,6 +22,7 @@ body {
   grid-template-rows: 100px auto 1fr auto;
   grid-template-columns: 100%;
 }
+
 nav {
   grid-area: nav;
 }
@@ -145,6 +146,7 @@ section {
 .text {
   padding: 20px;
 }
+
 .text h2:first-of-type {
   font-size: 45px;
   font-family: "Sacramento", cursive;
@@ -161,6 +163,7 @@ section {
   line-height: 1;
   color: #20424b;
 }
+
 .text p {
   font-size: 16px;
   line-height: 1.7;
@@ -171,9 +174,11 @@ section {
   padding: 10px;
   cursor: pointer;
 }
+
 .text p:hover {
-  box-shadow: 5px 0px 25px #14f25d;   /*  Add hover to paras  */
+  box-shadow: 5px 0px 25px #14f25d; /*  Add hover to paras  */
 }
+
 .image img {
   width: 100%;
   max-width: 400px;
