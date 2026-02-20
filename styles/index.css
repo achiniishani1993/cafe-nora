@@ -158,7 +158,9 @@ section {
   padding: 10px;
   cursor: pointer;
 }
-
+.text p:hover {
+  box-shadow: 5px 0px 25px #14F25D;
+}
 .image img {
   width: 100%;
   max-width: 400px;
