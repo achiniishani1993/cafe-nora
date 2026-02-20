@@ -158,3 +158,11 @@ section {
   padding: 10px;
   cursor: pointer;
 }
+
+.image img {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
