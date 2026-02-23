@@ -188,7 +188,7 @@ section {
 }
 /* Section 1 -know -END */
 
-/* video css */
+/* video css - STAR */
 .video-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -209,3 +209,4 @@ section {
   width: 1000px;
   height: 700px;
 }
+/* video css - END */
