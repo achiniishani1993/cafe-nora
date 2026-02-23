@@ -21,8 +21,8 @@ body {
 
   grid-template-rows: 100px auto 1fr auto;
   grid-template-columns: 100%;
-  grid-template-columns: auto;
 }
+
 nav {
   grid-area: nav;
 }
@@ -64,50 +64,126 @@ h1 {
 /* Styling the area of the slides */
 
 #slideshow {
+  width: 100%;
+  height: calc(100vh - 100px - 80px);
   overflow: hidden;
-  width: 1512px;
-  height: 590px;
-  margin: 0 auto;
 }
 
 /* Style each of the sides */
 
 .slide {
   float: left;
-  width: 1508px;
-  height: 590px;
+  width: 100vw;
+  height: 100%;
 }
 
 /* Add animation to the slides */
 
 .slide-wrapper {
-  /* Calculate the total width on the basis of number of slides */
-
-  width: calc(1508px * 4);
+  display: flex;
+  width: 400%;
+  height: 100%;
 
   /* Specify the animation with the duration and speed */
 
-  animation: slide 10s ease infinite;
+  animation: slide 12s infinite ease-in-out;
 }
 
 /* Define the animation for the slideshow */
 
 @keyframes slide {
-  /* Calculate the margin-left for each of the slides */
+  0%,
   20% {
-    margin-left: 0px;
+    margin-left: 0%;
   }
 
-  40% {
-    margin-left: calc(-1508px * 1);
+  25%,
+  45% {
+    margin-left: -100%;
   }
 
-  60% {
-    margin-left: calc(-1508px * 2);
+  50%,
+  70% {
+    margin-left: -200%;
   }
 
-  80% {
-    margin-left: calc(-1508px * 3);
+  75%,
+  95% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: 0%;
   }
 }
-/* Slide show - START */
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide show - END */
+
+/* Section 1 -know -START */
+
+section {
+  padding: 80px 0; /* Top + Bottom spacing  */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 45px 35px; /*  Left + Right spacing  */
+  align-items: center;
+}
+
+.text {
+  padding: 20px;
+}
+
+.text h2:first-of-type {
+  font-size: 45px;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  color: #14f25d;
+}
+
+.text h2:nth-of-type(2) {
+  font-size: 36px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  color: #20424b;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-style: normal;
+  color: #20424b;
+  border: 1px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.text p:hover {
+  box-shadow: 5px 0px 25px #14f25d; /*  Add hover to paras  */
+}
+
+.image img {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+/* Section 1 -know -END */
