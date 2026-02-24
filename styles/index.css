@@ -187,3 +187,26 @@ section {
   border-radius: 4px;
 }
 /* Section 1 -know -END */
+
+/* video css - STAR */
+.video-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 0 35px; /* Left + Right spacing */
+  align-items: center;
+}
+.video-container .table-btn {
+  justify-self: center;
+}
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video video {
+  width: 1000px;
+  height: 700px;
+}
+/* video css - END */

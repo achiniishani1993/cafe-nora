@@ -178,6 +178,94 @@
         </div>
       </section>
       <!-- Section -know - END -->
+      <!-- Section -video & popup button - START -->
+      <section>
+        <!-- video add -->
+        <div class="video-container" id="video-container">
+          <div class="video">
+            <video autoplay muted loop playsinline>
+              <source src="/Video/Caffe Norra.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <!-- POPUP button -->
+          <a href="#popupFormTwo" class="table-btn">Book a Table</a>
+          <div id="popupFormTwo" class="popup">
+            <div class="popup-content">
+              <a href="#video-container" class="close-btn">
+                <img src="/Images/clsoe.svg" alt="close" />
+              </a>
+              <h2>Reserve a Table</h2>
+              <form action="/pages/message.html" method="get">
+                <div>
+                  <label for="booking_name">Name</label>
+                  <input
+                    type="text"
+                    id="booking_nameNew"
+                    name="booking_name"
+                    placeholder="Name"
+                    autofocus
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="persons">Party size</label>
+                  <select name="persons" id="personsTwo">
+                    <option value="1-2 guests">1-2 guests</option>
+                    <option value="2-4 guests">2-4 guests</option>
+                    <option value="4-6 guests">4-6 guests</option>
+                    <option value="8-more guests">8-more guests</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date">Date</label>
+                  <input type="date" id="dateTwo" name="date" required />
+                </div>
+                <div>
+                  <label for="time">Time</label>
+                  <select name="time" id="timeTwo">
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="5:15 PM">5:15 PM</option>
+                    <option value="5:30 PM">5:30 PM</option>
+                    <option value="5:45 PM">5:45 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="6:15 PM">6:15 PM</option>
+                    <option value="6:30 PM">6:30 PM</option>
+                    <option value="6:45 PM">6:45 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="7:15 PM">7:15 PM</option>
+                    <option value="7:30 PM">7:30 PM</option>
+                    <option value="7:45 PM">7:45 PM</option>
+                    <option value="8:00 PM">8:00 PM</option>
+                    <option value="8:15 PM">8:15 PM</option>
+                    <option value="8:30 PM">8:30 PM</option>
+                    <option value="8:45 PM">8:45 PM</option>
+                    <option value="9:00 PM">9:00 PM</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="phone">Phone number</label>
+                  <input
+                    type="tel"
+                    id="phoneNew"
+                    name="phone"
+                    placeholder="076-456-678"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  href="/pages/message.html"
+                  class="booknow-btn"
+                >
+                  Book Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section -video  & popup button  - END -->
     </main>
 
     <footer></footer>
