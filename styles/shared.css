@@ -217,18 +217,18 @@
 }
 /* thankyou message css - END */
 
-
-
-/* Contact us section */
+/* Contact us section - START */
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: stretch;
 }
+
 .contact-container div {
   text-align: left;
 }
+
 .contact-form {
   margin-left: 47px;
 }
@@ -239,6 +239,7 @@
   font-size: 36px;
   color: #20424b;
 }
+
 .contact-form input {
   width: 100%;
   min-height: 64px;
@@ -268,15 +269,18 @@
 }
 
 .submitNow:hover {
-   background-color: #14f25d;
+  background-color: #14f25d;
   color: #20424b;
 }
+
 iframe {
   border-radius: 1em;
   border: none;
   width: 670px;
   height: 500px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
   opacity: 0.95;
 }
 
@@ -284,3 +288,5 @@ iframe:hover {
   transform: scale(1.05);
   opacity: 1;
 }
+
+/* Contact us section - END */
