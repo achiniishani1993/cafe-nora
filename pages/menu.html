@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Nora Menu</title>
+    <!-- Standardizes default styles across different browsers -->
+    <link rel="stylesheet" href="/styles/normalize.css"/>
+    <!-- Menu stylesheet -->
+    <link rel="stylesheet" href="/styles/menu.css"/>
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="/styles/shared.css"/>
+    <!-- Cormorant Garamond font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/e75678fef9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navigation bar -START copy navigation bar start to end  -->
+    <nav>
+      <div class="primary-nav">
+        <div class="nav-left">
+          <!-- left side -->
+          <img src="/Images/cafe-logo.png" alt="cafe logo" />
+        </div>
+
+        <div class="nav-right">
+          <!-- right side -->
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/gallery.html">Gallery</a></li>
+            <li><a href="/pages/menu.html">See Our Menu</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <!-- Booking popup - START -->
+          <div class="nav-btn">
+            <a href="#popupForm" class="table-btn">Book a Table</a>
+            <div id="popupForm" class="popup">
+              <div class="popup-content">
+                <a href="#" class="close-btn">
+                  <img src="/Images/clsoe.svg" alt="close" />
+                </a>
+                <h2>Reserve a Table</h2>
+                <form action="/pages/message.html" method="get">
+                  <div>
+                    <label for="booking_name">Name</label>
+                    <input
+                      type="text"
+                      id="booking_name"
+                      name="booking_name"
+                      placeholder="Name"
+                      autofocus
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="persons">Party size</label>
+                    <select name="persons" id="persons">
+                      <option value="1-2 guests">1-2 guests</option>
+                      <option value="2-4 guests">2-4 guests</option>
+                      <option value="4-6 guests">4-6 guests</option>
+                      <option value="8-more guests">8-more guests</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required />
+                  </div>
+                  <div>
+                    <label for="time">Time</label>
+                    <select name="time" id="time">
+                      <option value="5:00 PM">5:00 PM</option>
+                      <option value="5:15 PM">5:15 PM</option>
+                      <option value="5:30 PM">5:30 PM</option>
+                      <option value="5:45 PM">5:45 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="6:15 PM">6:15 PM</option>
+                      <option value="6:30 PM">6:30 PM</option>
+                      <option value="6:45 PM">6:45 PM</option>
+                      <option value="7:00 PM">7:00 PM</option>
+                      <option value="7:15 PM">7:15 PM</option>
+                      <option value="7:30 PM">7:30 PM</option>
+                      <option value="7:45 PM">7:45 PM</option>
+                      <option value="8:00 PM">8:00 PM</option>
+                      <option value="8:15 PM">8:15 PM</option>
+                      <option value="8:30 PM">8:30 PM</option>
+                      <option value="8:45 PM">8:45 PM</option>
+                      <option value="9:00 PM">9:00 PM</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="phone">Phone number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="076-456-678"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    href="/pages/message.html"
+                    class="booknow-btn"
+                  >
+                    Book Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Booking popup - END -->
+        </div>
+      </div>
+    </nav>
+    <!-- navigation bar -END -->
+</body>
+</html>
