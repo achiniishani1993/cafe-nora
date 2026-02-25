@@ -40,3 +40,34 @@ main {
 footer {
   grid-area: footer;
 }
+
+/* Header css - START */
+
+.text {
+  text-align: center;
+  padding: 20px;
+  line-height: 0.5;
+}
+
+.text h3 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: normal;
+  color: #14f25d;
+}
+
+.text h2 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  color: #20424b;
+}
+
+.text p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  color: #20424b;
+}
+
+/* Header css - START */
