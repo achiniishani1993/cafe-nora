@@ -71,3 +71,64 @@ footer {
 }
 
 /* Header css - START */
+
+
+/* Main Section 1 -START */
+.gridContainer {
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* All images */
+.gridContainer img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  border: 1px solid #14f25d;
+}
+
+/* Row 1: small left, big right */
+.elementOne {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+ 
+}
+
+/* Row 2: big left, small right */
+.elementTwo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+
+}
+
+/* Row 3: 3 equal */
+.elementThree {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* Row 4 */
+.elementFour {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/* Row 5 */
+.elementFive {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Row 6 */
+.elementSix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
