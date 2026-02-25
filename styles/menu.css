@@ -161,6 +161,11 @@ body {
 	min-height: 351px;
 }
 
+/* Modifier for Pastries & Sweets section */
+.menu-section--sweet {
+	min-height: 542px;
+}
+
 /* ============================
    	MENU SECTION - HEADING
    ============================ */
