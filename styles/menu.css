@@ -216,7 +216,7 @@ body {
 
 /* Left side content area (name + description) */
 .menu-item__content {
-	flex-grow: 0.6;
+	width: 60%;
 }
 
 /* Product name */
@@ -251,7 +251,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	flex-grow: 0.1;
 }
 
 /* Styled price badge */
