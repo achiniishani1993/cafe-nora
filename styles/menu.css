@@ -55,7 +55,7 @@ body {
 /* Main page heading (Menu) */
 .menu-page__heading {
 	margin-top: 0;
-	margin-bottom: 37px;
+	margin-bottom: 1.5rem;
 	font-size: 96px;
 	font-weight: 500;
 	line-height: 96px;
@@ -82,8 +82,8 @@ body {
 /* Center circle icon */
 .fa-solid.fa-circle.fa-sm {
 	color: #14f25d;
-	margin-left: 16px;
-	margin-right: 16px;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 /* ==============================
@@ -92,7 +92,7 @@ body {
 
 /* Tagline */
 .menu-page__tagline {
-	margin-top: 32px;
+	margin-top: 2rem;
 	margin-bottom: 0;
 	color: #2b2b2b;
 	font-style: italic;
@@ -103,8 +103,8 @@ body {
 
 /* Introductory paragraph */
 .menu-page__intro {
-	margin-top: 18px;
-	margin-bottom: 64px;
+	margin-top: 1rem;
+	margin-bottom: 4rem;
 	color: #2b2b2b;
 	font-weight: 400;
 	font-size: 20px;
@@ -119,8 +119,8 @@ body {
 /* Container for visual image strip */
 .menu-visual {
 	display: flex;
-	gap: 30px;
-	margin-bottom: 80px;
+	gap: 2rem;
+	margin-bottom: 5rem;
 }
 
 /* Shared styling for all images in the visual strip */
@@ -150,7 +150,7 @@ body {
 /* Category heading inside menu section */
 .menu-section__heading {
 	margin-top: 0;
-	margin-bottom: 22px;
+	margin-bottom: 1.5rem;
 	font-size: 48px;
 	font-weight: 400;
 	line-height: 48px;
@@ -169,20 +169,21 @@ body {
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	margin-top: 38px;
+	margin-top: 2.5rem;
 }
 
 /* =====================
    	MENU ITEM CARDS
    ===================== */
 
-/* Menu item cards styling */
+/* Menu item card styling */
 .menu-item {
 	display: flex;
+	justify-content: space-around;
 	max-width: 523px;
 	width: 100%;
 	min-height: 160px;
-	margin-top: 38px;
+	margin-top: 2.5rem;
 	border-style: solid;
 	border-color: rgba(58, 47, 42, 0.1);
 	border-width: 2px;
@@ -190,7 +191,55 @@ body {
 	background-color: #f7f6f2;
 }
 
-/* Left content area (name + description) */
+/* Left side content area (name + description) */
 .menu-item__content {
-	width: 80%;
+	flex-grow: 0.6;
+}
+
+/* Product name */
+.menu-item__name {
+	margin-top: 1.5rem;
+	color: #2b2b2b;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: capitalize;
+}
+
+/* Product description text */
+.menu-item__description {
+	color: #2b2b2b;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 29px;
+}
+
+/* Decorative green accent line under product description */
+.menu-item__accent-line {
+	margin: 0;
+	width: 48px;
+	border-top: 2px solid #14f25d;
+}
+
+/* Right side content area (price container) */
+.menu-item__price {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-grow: 0.1;
+}
+
+/* Styled price badge */
+.menu-item__price-text {
+	padding: 5px 14px 6px 13px;
+	color: #14f25d;
+	background-color: rgba(20, 242, 93, 0.1);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 36px;
+	border-style: solid;
+	border-radius: 8px;
 }
