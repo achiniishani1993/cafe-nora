@@ -75,8 +75,17 @@ body {
 /* Horizontal green line */
 .menu-page__line {
 	margin: 0;
-	width: 120px;
 	border-top: 1px solid #14f25d;
+}
+
+/* Modifier for short decorative line */
+.menu-page__line--short {
+	width: 120px;
+}
+
+/* Modifier for long decorative line */
+.menu-page__line--long {
+	width: 180px;
 }
 
 /* Center circle icon */
