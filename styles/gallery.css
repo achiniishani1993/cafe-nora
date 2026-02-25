@@ -72,7 +72,6 @@ footer {
 
 /* Header css - START */
 
-
 /* Main Section 1 -START */
 .gridContainer {
   display: grid;
@@ -90,23 +89,21 @@ footer {
   border: 1px solid #14f25d;
 }
 
-/* Row 1: small left, big right */
+/* Row 1 */
 .elementOne {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
- 
 }
 
-/* Row 2: big left, small right */
+/* Row 2 */
 .elementTwo {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-
 }
 
-/* Row 3: 3 equal */
+/* Row 3 */
 .elementThree {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -133,13 +130,12 @@ footer {
   gap: 20px;
 }
 
-/* Image container */
+/* Image container - ADD transition /transform to gallery */
 .imgBox {
   overflow: hidden;
   border-radius: 12px;
 }
 
-/* All images */
 .gridContainer img {
   width: 100%;
   height: 100%;
@@ -152,3 +148,5 @@ footer {
 .imgBox:hover img {
   transform: scale(1.15);
 }
+
+/* Main Section 1 -END */
