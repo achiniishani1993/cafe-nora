@@ -120,7 +120,6 @@ body {
 .menu-visual {
 	display: flex;
 	gap: 2rem;
-	margin-bottom: 5rem;
 }
 
 /* Shared styling for all images in the visual strip */
@@ -140,7 +139,17 @@ body {
 	align-items: center;
 	max-width: 1150px;
 	width: 100%;
+	margin-top: 5rem;
+}
+
+/* Modifier for Hot Coffee section */
+.menu-section--hot {
 	min-height: 733px;
+}
+
+/* Modifier for Cold Brews section */
+.menu-section--cold {
+	min-height: 351px;
 }
 
 /* ============================
