@@ -35,7 +35,7 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/pages/gallery.html">Gallery</a></li>
             <li><a href="/pages/menu.html">See Our Menu</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
           </ul>
           <!-- Booking popup - START -->
           <div class="nav-btn">
@@ -269,7 +269,7 @@
 
       <!-- Section -Contact us - START  -->
       <section>
-        <div class="contact-container">
+        <div class="contact-container" id="contactUs">
           <div class="contact-form">
             <h2>Get in Touch</h2>
             <form>
@@ -308,6 +308,65 @@
       <!-- Section -Contact us - END  -->
     </main>
 
-    <footer></footer>
+
+    <!-- footer - START -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>NORA<span>CAFE</span></h2>
+          <p>SWEET CAFE HOUSE</p>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-address">
+          <p>500 Terry Francine Street</p>
+          <p>Helsingborg City</p>
+          <p>Tel: 123-456-7890</p>
+        </div>
+
+        <!-- Opening Hours + Social -->
+        <div class="footer-hours">
+          <p>Mon - Fri: 7am - 10pm</p>
+          <p>Saturday: 8am - 11pm</p>
+          <p>Sunday: 8am - 10pm</p>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="/Images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="/Images/insta.svg" alt="Instagram"
+          /></a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h3>Let's be friends and have eggs benedict</h3>
+          <form>
+            <label>Email *</label>
+            <input type="email" placeholder="" required />
+
+            <div class="newsletter-bottom">
+              <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" required />
+                <label for="subscribe">
+                  Yes, subscribe me to your newsletter. *
+                </label>
+              </div>
+
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 by cafe Nora. Powered and secured by <a href="#">Nora</a>
+      </div>
+    </footer>
+
+    <!-- footer - END -->
   </body>
 </html>
