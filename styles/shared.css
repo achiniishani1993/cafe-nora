@@ -222,6 +222,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+  padding-top: 10px;
   align-items: stretch;
 }
 
@@ -294,7 +295,7 @@ iframe:hover {
 /* footer css - START */
 /* Footer Base */
 .site-footer {
-  padding: 5px 80px 30px;
+  padding: 0px 80px 30px;
   color: #20424b;
 }
 
@@ -357,7 +358,7 @@ iframe:hover {
 .footer-newsletter h3 {
   font-size: 20px;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-newsletter label {
