@@ -113,7 +113,7 @@ body {
 }
 
 /* ==================================
-   MENU PAGE - VISUAL/IMAGE STRIP
+   	MENU PAGE - VISUAL/IMAGE STRIP
    ================================== */
 
 /* Container for visual image strip */
@@ -129,20 +129,23 @@ body {
 	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* =========================================
-   MENU PAGE - MENU SECTION (CATEGORY BLOCK)
-   ========================================= */
+/* ================================================
+   	MENU PAGE - MENU SECTION (BLOCK CONTAINERS)
+   ================================================ */
 
 /* Wrapper for each menu category section */
 .menu-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 1150px;
+	width: 100%;
+	min-height: 733px;
 }
 
-/* =========================================
-   MENU SECTION - HEADING
-   ========================================= */
+/* ============================
+   	MENU SECTION - HEADING
+   ============================ */
 
 /* Category heading inside menu section */
 .menu-section__heading {
@@ -153,4 +156,41 @@ body {
 	line-height: 48px;
 	color: #3a2f2a;
 	text-transform: capitalize;
+}
+
+/* ==================================
+   	MENU SECTION – ITEMS CONTAINER
+   ================================== */
+
+/* Container for all menu item cards */
+.menu-section__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	margin-top: 38px;
+}
+
+/* =====================
+   	MENU ITEM CARDS
+   ===================== */
+
+/* Menu item cards styling */
+.menu-item {
+	display: flex;
+	max-width: 523px;
+	width: 100%;
+	min-height: 160px;
+	margin-top: 38px;
+	border-style: solid;
+	border-color: rgba(58, 47, 42, 0.1);
+	border-width: 2px;
+	border-radius: 10px;
+	background-color: #f7f6f2;
+}
+
+/* Left content area (name + description) */
+.menu-item__content {
+	width: 80%;
 }
