@@ -71,3 +71,82 @@ footer {
 }
 
 /* Header css - START */
+
+/* Main Section 1 -START */
+.gridContainer {
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* All images */
+.gridContainer img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  border: 1px solid #14f25d;
+}
+
+/* Row 1 */
+.elementOne {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/* Row 2 */
+.elementTwo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Row 3 */
+.elementThree {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* Row 4 */
+.elementFour {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+/* Row 5 */
+.elementFive {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Row 6 */
+.elementSix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Image container - ADD transition /transform to gallery */
+.imgBox {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gridContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Hover effect */
+.imgBox:hover img {
+  transform: scale(1.15);
+}
+
+/* Main Section 1 -END */
