@@ -260,6 +260,26 @@ body {
 	border-radius: 3px;
 }
 
+/* Green accent line animation on hover (inactive state) */
+.menu-item__accent-line::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	height: 2px;
+	left: 2.5vw;
+	width: 21.5vw;
+	background-color: #14f25d;
+	border-radius: 3px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease-out;
+}
+
+/* Green accent line animation on hover (active state) */
+.menu-item:hover .menu-item__accent-line::after {
+	transform: scaleX(1);
+}
+
 /* Right side content area (price container) */
 .menu-item__price {
 	display: flex;
