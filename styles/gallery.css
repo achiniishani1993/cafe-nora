@@ -145,4 +145,19 @@ section:nth-of-type(2) {
   transform: scale(1.15);
 }
 
+/* Fade-In Animation */
+
+.imgBox {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Main Section 1 -END */
