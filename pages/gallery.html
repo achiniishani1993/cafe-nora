@@ -104,13 +104,7 @@
                       required
                     />
                   </div>
-                  <button
-                    type="submit"
-                    href="/pages/message.html"
-                    class="booknow-btn"
-                  >
-                    Book Now
-                  </button>
+                  <button type="submit" class="booknow-btn">Book Now</button>
                 </form>
               </div>
             </div>
@@ -186,7 +180,7 @@
             <img src="/Images/mocha.png" alt="Cafe cup" />
           </div>
           <div class="imgBox">
-            <img src="/Images/Sandwitch1.png" alt="Sandwitch" />
+            <img src="/Images/Sandwich.png" alt="Sandwich" />
           </div>
         </div>
 
@@ -207,6 +201,107 @@
         </div>
       </section>
       <!-- Gallery images section - START -->
+
+      <!-- Section -Contact us - START  -->
+      <section>
+        <div class="contact-container" id="contactUs">
+          <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              /><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              /><br />
+              <input
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+              /><br /><br />
+              <button type="submit" class="submitNow">Submit Now</button>
+            </form>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71330.43351911647!2d12.650244731413267!3d56.03467210335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46522d7a50a22925%3A0x4019078290e7a90!2sHelsingborg!5e0!3m2!1sen!2sse!4v1771934467288!5m2!1sen!2sse"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Section -Contact us - END  -->
     </main>
+
+    <!-- footer - START -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>NORA<span>CAFE</span></h2>
+          <p>SWEET CAFE HOUSE</p>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-address">
+          <p>500 Terry Francine Street</p>
+          <p>Helsingborg City</p>
+          <p>Tel: 123-456-7890</p>
+        </div>
+
+        <!-- Opening Hours + Social -->
+        <div class="footer-hours">
+          <p>Mon - Fri: 7am - 10pm</p>
+          <p>Saturday: 8am - 11pm</p>
+          <p>Sunday: 8am - 10pm</p>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="/Images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="/Images/insta.svg" alt="Instagram"
+          /></a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h3>Let's be friends and have eggs benedict</h3>
+          <form>
+            <label>Email *</label>
+            <input type="email" placeholder="" required />
+
+            <div class="newsletter-bottom">
+              <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" required />
+                <label for="subscribe">
+                  Yes, subscribe me to your newsletter. *
+                </label>
+              </div>
+
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 by cafe Nora. Powered and secured by <a href="#">Nora</a>
+      </div>
+    </footer>
+
+    <!-- footer - END -->
   </body>
 </html>

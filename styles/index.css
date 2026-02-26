@@ -11,7 +11,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   display: grid;
 
-  height: 100vh;
+  min-height: 100vh;
 
   grid-template-areas:
     "nav "

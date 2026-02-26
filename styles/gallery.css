@@ -11,7 +11,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   display: grid;
 
-  height: 100vh;
+  min-height: 100vh;
 
   grid-template-areas:
     "nav "
@@ -41,12 +41,15 @@ footer {
   grid-area: footer;
 }
 
+section:nth-of-type(2) {
+  padding: 80px; /* Top + Bottom spacing  */
+}
 /* Header css - START */
 
 .text {
   text-align: center;
   padding: 20px;
-  line-height: 0.5;
+  line-height: 1;
 }
 
 .text h3 {
@@ -78,15 +81,6 @@ footer {
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* All images */
-.gridContainer img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  border: 1px solid #14f25d;
 }
 
 /* Row 1 */
@@ -141,12 +135,29 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 12px;
+  border: 1px solid #14f25d;
   transition: transform 0.4s ease;
 }
 
 /* Hover effect */
 .imgBox:hover img {
   transform: scale(1.15);
+}
+
+/* Fade-In Animation */
+
+.imgBox {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Main Section 1 -END */
