@@ -152,17 +152,17 @@ body {
 }
 
 /* Modifier for Hot Coffee section */
-.menu-section--hot {
+.menu-section--large {
 	min-height: 733px;
 }
 
-/* Modifier for Cold Brews section */
-.menu-section--cold {
+/* Modifier for Cold Brews and Sandwiches & Bites section */
+.menu-section--small {
 	min-height: 351px;
 }
 
 /* Modifier for Pastries & Sweets section */
-.menu-section--sweet {
+.menu-section--medium {
 	min-height: 542px;
 }
 
