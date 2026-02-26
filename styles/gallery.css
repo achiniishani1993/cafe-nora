@@ -11,7 +11,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   display: grid;
 
-  height: 100vh;
+  min-height: 100vh;
 
   grid-template-areas:
     "nav "
@@ -49,7 +49,7 @@ section:nth-of-type(2) {
 .text {
   text-align: center;
   padding: 20px;
-  line-height: 0.5;
+  line-height: 1;
 }
 
 .text h3 {
@@ -81,15 +81,6 @@ section:nth-of-type(2) {
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* All images */
-.gridContainer img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  border: 1px solid #14f25d;
 }
 
 /* Row 1 */
@@ -144,6 +135,8 @@ section:nth-of-type(2) {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 12px;
+  border: 1px solid #14f25d;
   transition: transform 0.4s ease;
 }
 
