@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Nora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- normalized css -->
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <!-- shared css link -->
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <!-- index css link -->
+    <link rel="stylesheet" href="/styles/gallery.css" />
+  </head>
+  <body>
+    <!-- navigation bar -START copy navigation bar start to end  -->
+    <nav>
+      <div class="primary-nav">
+        <div class="nav-left">
+          <!-- left side -->
+          <img src="/Images/cafe-logo.png" alt="cafe logo" />
+        </div>
+
+        <div class="nav-right">
+          <!-- right side -->
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/gallery.html">Gallery</a></li>
+            <li><a href="/pages/menu.html">See Our Menu</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+          </ul>
+          <!-- Booking popup - START -->
+          <div class="nav-btn">
+            <a href="#popupForm" class="table-btn">Book a Table</a>
+            <div id="popupForm" class="popup">
+              <div class="popup-content">
+                <a href="#" class="close-btn">
+                  <img src="/Images/clsoe.svg" alt="close" />
+                </a>
+                <h2>Reserve a Table</h2>
+                <form action="/pages/message.html" method="get">
+                  <div>
+                    <label for="booking_name">Name</label>
+                    <input
+                      type="text"
+                      id="booking_name"
+                      name="booking_name"
+                      placeholder="Name"
+                      autofocus
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="persons">Party size</label>
+                    <select name="persons" id="persons">
+                      <option value="1-2 guests">1-2 guests</option>
+                      <option value="2-4 guests">2-4 guests</option>
+                      <option value="4-6 guests">4-6 guests</option>
+                      <option value="8-more guests">8-more guests</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required />
+                  </div>
+                  <div>
+                    <label for="time">Time</label>
+                    <select name="time" id="time">
+                      <option value="5:00 PM">5:00 PM</option>
+                      <option value="5:15 PM">5:15 PM</option>
+                      <option value="5:30 PM">5:30 PM</option>
+                      <option value="5:45 PM">5:45 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="6:15 PM">6:15 PM</option>
+                      <option value="6:30 PM">6:30 PM</option>
+                      <option value="6:45 PM">6:45 PM</option>
+                      <option value="7:00 PM">7:00 PM</option>
+                      <option value="7:15 PM">7:15 PM</option>
+                      <option value="7:30 PM">7:30 PM</option>
+                      <option value="7:45 PM">7:45 PM</option>
+                      <option value="8:00 PM">8:00 PM</option>
+                      <option value="8:15 PM">8:15 PM</option>
+                      <option value="8:30 PM">8:30 PM</option>
+                      <option value="8:45 PM">8:45 PM</option>
+                      <option value="9:00 PM">9:00 PM</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="phone">Phone number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="076-456-678"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    href="/pages/message.html"
+                    class="booknow-btn"
+                  >
+                    Book Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Booking popup - END -->
+        </div>
+      </div>
+    </nav>
+    <!-- navigation bar -END -->
+
+    <!-- Gallery header - START -->
+    <header>
+      <div class="text">
+        <h3>Our Space</h3>
+        <h2>Gallery</h2>
+        <p>A glimpse into the warmth and character of Nora Cafe</p>
+      </div>
+    </header>
+    <!-- Gallery header - END -->
+
+    <main>
+      <!-- Gallery images section - START -->
+      <section class="gridContainer">
+        <!-- Row 1 -->
+        <div class="elementOne">
+          <div class="imgBox">
+            <img src="/Images/iced coffee.png" alt="Ice coffee" />
+          </div>
+          <div class="imgBox">
+            <img src="/Images/Coffebeans.png" alt="Coffee beans" />
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="elementTwo">
+          <div class="imgBox">
+            <img src="/Images/Cake and espresso.png" alt="Cake and espresso" />
+          </div>
+          <div class="imgBox">
+            <img src="/Images/milkshake.png" alt="Milkshake" />
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="elementThree">
+          <div class="imgBox">
+            <img src="/Images/croissants.png" alt="Croissants" />
+          </div>
+          <div class="imgBox">
+            <img src="/Images/Capa2.png" alt="Cappuccino" />
+          </div>
+          <div class="imgBox">
+            <img src="/Images/choco-Muffin.png" alt="Chocolate Muffin" />
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="elementFour">
+          <div class="imgBox">
+            <img src="/Images/Barista at work (4).png" alt="Barista at work" />
+          </div>
+          <div class="imgBox">
+            <img src="/Images/Coffe3.png" alt="Cafe cup" />
+          </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="elementFive">
+          <div class="imgBox">
+            <img src="/Images/avocado-toast.png" alt="avocado-toast" />
+          </div>
+          <div class="imgBox">
+            <img src="/Images/mocha.png" alt="Cafe cup" />
+          </div>
+          <div class="imgBox">
+            <img src="/Images/Sandwitch1.png" alt="Sandwitch" />
+          </div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="elementSix">
+          <div class="imgBox">
+            <img src="/Images/americano-coffee 1.png" alt="americano-coffee" />
+          </div>
+          <div class="imgBox">
+            <img
+              src="/Images/salad-with-chicken.png"
+              alt="salad-with-chicken"
+            />
+          </div>
+          <div class="imgBox">
+            <img src="/Images/Macchito.png" alt="Cafe cup" />
+          </div>
+        </div>
+      </section>
+      <!-- Gallery images section - START -->
+    </main>
+  </body>
+</html>

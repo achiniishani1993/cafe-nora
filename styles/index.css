@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* add grid layout to the home page -to have more responsive layout */
+
 body {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
@@ -19,8 +21,8 @@ body {
 
   grid-template-rows: 100px auto 1fr auto;
   grid-template-columns: 100%;
-  grid-template-columns: auto;
 }
+
 nav {
   grid-area: nav;
 }
@@ -38,3 +40,173 @@ main {
 footer {
   grid-area: footer;
 }
+
+/* grid layout to the home page - END */
+
+/* header styles - START  */
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.02rem;
+  color: #20424b;
+}
+
+.greenText {
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: 0.02rem;
+  color: #14f25d;
+}
+
+/* Slide show - START */
+/* Styling the area of the slides */
+
+#slideshow {
+  width: 100%;
+  height: calc(100vh - 100px - 80px);
+  overflow: hidden;
+}
+
+/* Style each of the sides */
+
+.slide {
+  float: left;
+  width: 100vw;
+  height: 100%;
+}
+
+/* Add animation to the slides */
+
+.slide-wrapper {
+  display: flex;
+  width: 400%;
+  height: 100%;
+
+  /* Specify the animation with the duration and speed */
+
+  animation: slide 12s infinite ease-in-out;
+}
+
+/* Define the animation for the slideshow */
+
+@keyframes slide {
+  0%,
+  20% {
+    margin-left: 0%;
+  }
+
+  25%,
+  45% {
+    margin-left: -100%;
+  }
+
+  50%,
+  70% {
+    margin-left: -200%;
+  }
+
+  75%,
+  95% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: 0%;
+  }
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide show - END */
+
+/* Section 1 -know -START */
+
+section {
+  padding: 80px 0; /* Top + Bottom spacing  */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 45px 35px; /*  Left + Right spacing  */
+  align-items: center;
+}
+
+.text {
+  padding: 20px;
+}
+
+.text h2:first-of-type {
+  font-size: 45px;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  color: #14f25d;
+}
+
+.text h2:nth-of-type(2) {
+  font-size: 36px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  color: #20424b;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-style: normal;
+  color: #20424b;
+  border: 1px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.text p:hover {
+  box-shadow: 5px 0px 25px #14f25d; /*  Add hover to paras  */
+}
+
+.image img {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+/* Section 1 -know -END */
+
+/* video css - STAR */
+.video-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 0 35px; /* Left + Right spacing */
+  align-items: center;
+}
+.video-container .table-btn {
+  justify-self: center;
+}
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video video {
+  width: 1000px;
+  height: 700px;
+}
+/* video css - END */

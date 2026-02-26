@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Sacramento&display=swap"
       rel="stylesheet"
     />
 
@@ -35,7 +35,7 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/pages/gallery.html">Gallery</a></li>
             <li><a href="/pages/menu.html">See Our Menu</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
           </ul>
           <!-- Booking popup - START -->
           <div class="nav-btn">
@@ -120,9 +120,250 @@
       </div>
     </nav>
     <!-- navigation bar -END -->
-    <header></header>
-    <main></main>
+    <header>
+      <div>
+        <h1>
+          Start your day with something <span class="greenText">yummy</span> or
+          take a break and savor the <span class="greenText"> moment</span>
+        </h1>
+        <!-- Slideshow - START-->
+        <div id="slideshow">
+          <div class="slide-wrapper">
+            <div class="slide">
+              <img
+                src="/Images/cafeInside.png"
+                alt="Inside image of the cafe"
+              />
+            </div>
+            <div class="slide">
+              <img src="/Images/coffe.png" alt="Image of coffe cup" />
+            </div>
+            <div class="slide">
+              <img src="/Images/items.png" alt="food items" />
+            </div>
+            <div class="slide">
+              <img src="/Images/toast.png" alt="egg toast" />
+            </div>
+          </div>
+        </div>
+        <!-- Slideshow - END-->
+      </div>
+    </header>
+    <main>
+      <!-- Section -know - START -->
+      <section>
+        <div class="container">
+          <div class="text">
+            <h2>Know</h2>
+            <h2>Truly Great Coffee</h2>
+            <p>
+              At our café, every cup is carefully crafted using high-quality
+              beans, expertly brewed to bring out rich flavors and smooth
+              aromas. Whether you're starting your morning or taking a relaxing
+              break, our coffee is made to be savored, one delicious sip at a
+              time.
+            </p>
+            <p>
+              We believe the best coffee comes from passion, freshness, and
+              attention to detail. That's why we focus on every step, from
+              selecting the finest beans to brewing each cup with care. Step
+              into our cozy space, enjoy the comforting atmosphere, and let our
+              truly great coffee brighten your day with every sip.
+            </p>
+          </div>
 
-    <footer></footer>
+          <figure class="image">
+            <img src="/Images/cappuccino.png" alt="cup of cappuccino" />
+          </figure>
+        </div>
+      </section>
+      <!-- Section -know - END -->
+      <!-- Section -video & popup button - START -->
+      <section>
+        <!-- video add -->
+        <div class="video-container" id="video-container">
+          <div class="video">
+            <video autoplay muted loop playsinline>
+              <source src="/Video/Caffe Norra.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <!-- POPUP button -->
+          <a href="#popupFormTwo" class="table-btn">Book a Table</a>
+          <div id="popupFormTwo" class="popup">
+            <div class="popup-content">
+              <a href="#video-container" class="close-btn">
+                <img src="/Images/clsoe.svg" alt="close" />
+              </a>
+              <h2>Reserve a Table</h2>
+              <form action="/pages/message.html" method="get">
+                <div>
+                  <label for="booking_name">Name</label>
+                  <input
+                    type="text"
+                    id="booking_nameNew"
+                    name="booking_name"
+                    placeholder="Name"
+                    autofocus
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="persons">Party size</label>
+                  <select name="persons" id="personsTwo">
+                    <option value="1-2 guests">1-2 guests</option>
+                    <option value="2-4 guests">2-4 guests</option>
+                    <option value="4-6 guests">4-6 guests</option>
+                    <option value="8-more guests">8-more guests</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="date">Date</label>
+                  <input type="date" id="dateTwo" name="date" required />
+                </div>
+                <div>
+                  <label for="time">Time</label>
+                  <select name="time" id="timeTwo">
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="5:15 PM">5:15 PM</option>
+                    <option value="5:30 PM">5:30 PM</option>
+                    <option value="5:45 PM">5:45 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="6:15 PM">6:15 PM</option>
+                    <option value="6:30 PM">6:30 PM</option>
+                    <option value="6:45 PM">6:45 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="7:15 PM">7:15 PM</option>
+                    <option value="7:30 PM">7:30 PM</option>
+                    <option value="7:45 PM">7:45 PM</option>
+                    <option value="8:00 PM">8:00 PM</option>
+                    <option value="8:15 PM">8:15 PM</option>
+                    <option value="8:30 PM">8:30 PM</option>
+                    <option value="8:45 PM">8:45 PM</option>
+                    <option value="9:00 PM">9:00 PM</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="phone">Phone number</label>
+                  <input
+                    type="tel"
+                    id="phoneNew"
+                    name="phone"
+                    placeholder="076-456-678"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                    required
+                  />
+                </div>
+                <button
+                  type="submit"
+                  href="/pages/message.html"
+                  class="booknow-btn"
+                >
+                  Book Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section -video  & popup button  - END -->
+
+      <!-- Section -Contact us - START  -->
+      <section>
+        <div class="contact-container" id="contactUs">
+          <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+              /><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              /><br />
+              <input
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Message"
+              /><br /><br />
+              <button type="submit" class="submitNow">Submit Now</button>
+            </form>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71330.43351911647!2d12.650244731413267!3d56.03467210335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46522d7a50a22925%3A0x4019078290e7a90!2sHelsingborg!5e0!3m2!1sen!2sse!4v1771934467288!5m2!1sen!2sse"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Section -Contact us - END  -->
+    </main>
+
+    <!-- footer - START -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>NORA<span>CAFE</span></h2>
+          <p>SWEET CAFE HOUSE</p>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-address">
+          <p>500 Terry Francine Street</p>
+          <p>Helsingborg City</p>
+          <p>Tel: 123-456-7890</p>
+        </div>
+
+        <!-- Opening Hours + Social -->
+        <div class="footer-hours">
+          <p>Mon - Fri: 7am - 10pm</p>
+          <p>Saturday: 8am - 11pm</p>
+          <p>Sunday: 8am - 10pm</p>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="/Images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="/Images/insta.svg" alt="Instagram"
+          /></a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h3>Let's be friends and have eggs benedict</h3>
+          <form>
+            <label>Email *</label>
+            <input type="email" placeholder="" required />
+
+            <div class="newsletter-bottom">
+              <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" required />
+                <label for="subscribe">
+                  Yes, subscribe me to your newsletter. *
+                </label>
+              </div>
+
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 by cafe Nora. Powered and secured by <a href="#">Nora</a>
+      </div>
+    </footer>
+
+    <!-- footer - END -->
   </body>
 </html>
