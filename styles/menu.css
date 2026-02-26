@@ -265,3 +265,25 @@ body {
 	border-style: solid;
 	border-radius: 8px;
 }
+
+/* ==================================
+   	MENU PAGE - ADDITIONAL NOTE
+   ================================== */
+
+/* Wrapper for additional menu note */
+.menu-page__note {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+	max-width: 1300px;
+	width: 100%;
+	min-height: 110px;
+	border-top: 1px solid #3a2f2a;
+}
+
+/* Text inside additional note section */
+.menu-page__note-text {
+	color: #3a2f2a;
+	font-size: 18px;
+	line-height: 28px;
+}
