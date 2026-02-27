@@ -1,541 +1,665 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Cafe Nora Menu</title>
-		<!-- Standardizes default styles across different browsers -->
-		<link rel="stylesheet" href="/styles/normalize.css" />
-		<!-- Menu stylesheet -->
-		<link rel="stylesheet" href="/styles/menu.css" />
-		<!-- Shared stylesheet -->
-		<link rel="stylesheet" href="/styles/shared.css" />
-		<!-- Cormorant Garamond font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
-		<!-- Font Awesome icons -->
-		<script src="https://kit.fontawesome.com/e75678fef9.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<!-- =====================================
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Nora Menu</title>
+    <!-- Standardizes default styles across different browsers -->
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <!-- Shared stylesheet -->
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <!-- Menu stylesheet -->
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <!-- Cormorant Garamond font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/e75678fef9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- =====================================
           		PRIMARY NAVIGATION
           		(Shared across all pages)
         	========================================== -->
-		<nav>
-			<div class="primary-nav">
-				<div class="nav-left">
-					<!-- left side -->
-					<img src="/Images/cafe-logo.png" alt="cafe logo" />
-				</div>
+    <nav>
+      <div class="primary-nav">
+        <div class="nav-left">
+          <!-- left side -->
+          <img src="/Images/cafe-logo.png" alt="cafe logo" />
+        </div>
 
-				<div class="nav-right">
-					<!-- right side -->
-					<ul class="nav-links">
-						<li><a href="/index.html">Home</a></li>
-						<li><a href="/pages/gallery.html">Gallery</a></li>
-						<li><a href="/pages/menu.html">See Our Menu</a></li>
-						<li><a href="#">Contact Us</a></li>
-					</ul>
+        <div class="nav-right">
+          <!-- right side -->
+          <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/gallery.html">Gallery</a></li>
+            <li><a href="/pages/menu.html">See Our Menu</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+          </ul>
 
-					<!-- =========================================
+          <!-- =========================================
                 			BOOK TABLE BUTTON + POPUP FORM
               			========================================== -->
-					<div class="nav-btn">
-						<a href="#popupForm" class="table-btn">Book a Table</a>
-						<div id="popupForm" class="popup">
-							<div class="popup-content">
-								<a href="#" class="close-btn">
-									<img src="/Images/clsoe.svg" alt="close" />
-								</a>
-								<h2>Reserve a Table</h2>
-								<form action="/pages/message.html" method="get">
-									<div>
-										<label for="booking_name">Name</label>
-										<input type="text" id="booking_name" name="booking_name" placeholder="Name" autofocus required />
-									</div>
-									<div>
-										<label for="persons">Party size</label>
-										<select name="persons" id="persons">
-											<option value="1-2 guests">1-2 guests</option>
-											<option value="2-4 guests">2-4 guests</option>
-											<option value="4-6 guests">4-6 guests</option>
-											<option value="8-more guests">8-more guests</option>
-										</select>
-									</div>
-									<div>
-										<label for="date">Date</label>
-										<input type="date" id="date" name="date" required />
-									</div>
-									<div>
-										<label for="time">Time</label>
-										<select name="time" id="time">
-											<option value="5:00 PM">5:00 PM</option>
-											<option value="5:15 PM">5:15 PM</option>
-											<option value="5:30 PM">5:30 PM</option>
-											<option value="5:45 PM">5:45 PM</option>
-											<option value="6:00 PM">6:00 PM</option>
-											<option value="6:15 PM">6:15 PM</option>
-											<option value="6:30 PM">6:30 PM</option>
-											<option value="6:45 PM">6:45 PM</option>
-											<option value="7:00 PM">7:00 PM</option>
-											<option value="7:15 PM">7:15 PM</option>
-											<option value="7:30 PM">7:30 PM</option>
-											<option value="7:45 PM">7:45 PM</option>
-											<option value="8:00 PM">8:00 PM</option>
-											<option value="8:15 PM">8:15 PM</option>
-											<option value="8:30 PM">8:30 PM</option>
-											<option value="8:45 PM">8:45 PM</option>
-											<option value="9:00 PM">9:00 PM</option>
-										</select>
-									</div>
-									<div>
-										<label for="phone">Phone number</label>
-										<input type="tel" id="phone" name="phone" placeholder="076-456-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required />
-									</div>
-									<button type="submit" href="/pages/message.html" class="booknow-btn">Book Now</button>
-								</form>
-							</div>
-						</div>
-					</div>
-					<!-- Booking popup - END -->
-				</div>
-			</div>
-		</nav>
-		<!-- navigation bar -END -->
+          <div class="nav-btn">
+            <a href="#popupForm" class="table-btn">Book a Table</a>
+            <div id="popupForm" class="popup">
+              <div class="popup-content">
+                <a href="#" class="close-btn">
+                  <img src="/Images/clsoe.svg" alt="close" />
+                </a>
+                <h2>Reserve a Table</h2>
+                <form action="/pages/message.html" method="get">
+                  <div>
+                    <label for="booking_name">Name</label>
+                    <input
+                      type="text"
+                      id="booking_name"
+                      name="booking_name"
+                      placeholder="Name"
+                      autofocus
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="persons">Party size</label>
+                    <select name="persons" id="persons">
+                      <option value="1-2 guests">1-2 guests</option>
+                      <option value="2-4 guests">2-4 guests</option>
+                      <option value="4-6 guests">4-6 guests</option>
+                      <option value="8-more guests">8-more guests</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required />
+                  </div>
+                  <div>
+                    <label for="time">Time</label>
+                    <select name="time" id="time">
+                      <option value="5:00 PM">5:00 PM</option>
+                      <option value="5:15 PM">5:15 PM</option>
+                      <option value="5:30 PM">5:30 PM</option>
+                      <option value="5:45 PM">5:45 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="6:15 PM">6:15 PM</option>
+                      <option value="6:30 PM">6:30 PM</option>
+                      <option value="6:45 PM">6:45 PM</option>
+                      <option value="7:00 PM">7:00 PM</option>
+                      <option value="7:15 PM">7:15 PM</option>
+                      <option value="7:30 PM">7:30 PM</option>
+                      <option value="7:45 PM">7:45 PM</option>
+                      <option value="8:00 PM">8:00 PM</option>
+                      <option value="8:15 PM">8:15 PM</option>
+                      <option value="8:30 PM">8:30 PM</option>
+                      <option value="8:45 PM">8:45 PM</option>
+                      <option value="9:00 PM">9:00 PM</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="phone">Phone number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="076-456-678"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    href="/pages/message.html"
+                    class="booknow-btn"
+                  >
+                    Book Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Booking popup - END -->
+        </div>
+      </div>
+    </nav>
+    <!-- navigation bar -END -->
 
-		<!-- =========================================
+    <!-- =========================================
       			MAIN CONTENT
      		========================================== -->
-		<main>
-			<!-- Menu page wrapper -->
-			<div class="menu-page">
-				<!-- =====================================
+    <main>
+      <!-- Menu page wrapper -->
+      <div class="menu-page">
+        <!-- =====================================
           				HERO SECTION
          			====================================== -->
-				<section class="menu-page__hero">
-					<!-- Main page heading -->
-					<h1 class="menu-page__heading">Menu</h1>
-					<!-- Decorative heading divider (line + icon + line) -->
-					<div class="menu-page__divider">
-						<hr class="menu-page__line menu-page__line--short" />
-						<i class="fa-solid fa-circle fa-sm"></i>
-						<hr class="menu-page__line menu-page__line--short" />
-					</div>
-					<!-- Tagline -->
-					<h2 class="menu-page__tagline">Crafted with passion, served with love</h2>
-					<!-- Introductory paragraph -->
-					<p class="menu-page__intro">
-						Every cup tells a story. Our beans are ethically sourced and expertly roasted to bring out their <br />
-						unique flavors. Pair your coffee with one of our freshly baked pastries for the perfect experience.
-					</p>
-				</section>
-				<!-- END Hero section -->
+        <section class="menu-page__hero">
+          <!-- Main page heading -->
+          <h1 class="menu-page__heading">Menu</h1>
+          <!-- Decorative heading divider (line + icon + line) -->
+          <div class="menu-page__divider">
+            <hr class="menu-page__line menu-page__line--short" />
+            <i class="fa-solid fa-circle fa-sm"></i>
+            <hr class="menu-page__line menu-page__line--short" />
+          </div>
+          <!-- Tagline -->
+          <h2 class="menu-page__tagline">
+            Crafted with passion, served with love
+          </h2>
+          <!-- Introductory paragraph -->
+          <p class="menu-page__intro">
+            Every cup tells a story. Our beans are ethically sourced and
+            expertly roasted to bring out their <br />
+            unique flavors. Pair your coffee with one of our freshly baked
+            pastries for the perfect experience.
+          </p>
+        </section>
+        <!-- END Hero section -->
 
-				<!-- ========================================
+        <!-- ========================================
              			MENU VISUAL/IMAGE STRIP
              		========================================= -->
-				<section class="menu-visual">
-					<img src="/Images/latte-art.png" alt="Cup of coffee with latte art" class="menu-visual__img menu-visual__img--latte-art" />
-					<img src="/Images/coffee-beans.png" alt="Close-up of roasted coffee beans" class="menu-visual__img menu-visual__img--coffee-beans" />
-					<img src="/Images/pastries.png" alt="Assortment of freshly baked pastries" class="menu-visual__img menu-visual__img--pastries" />
-				</section>
-				<!-- END Menu visual/image strip -->
+        <section class="menu-visual">
+          <img
+            src="/Images/latte-art.png"
+            alt="Cup of coffee with latte art"
+            class="menu-visual__img menu-visual__img--latte-art"
+          />
+          <img
+            src="/Images/coffee-beans.png"
+            alt="Close-up of roasted coffee beans"
+            class="menu-visual__img menu-visual__img--coffee-beans"
+          />
+          <img
+            src="/Images/pastries.png"
+            alt="Assortment of freshly baked pastries"
+            class="menu-visual__img menu-visual__img--pastries"
+          />
+        </section>
+        <!-- END Menu visual/image strip -->
 
-				<!-- =================================================
+        <!-- =================================================
      					MENU SECTION (HOT COFFEE) - BLOCK CONTAINER
      				================================================== -->
-				<section class="menu-section menu-section--large">
-					<!-- Category heading -->
-					<h3 class="menu-section__heading">Hot coffee</h3>
-					<!-- Decorative heading divider (line + icon + line) -->
-					<div class="menu-page__divider">
-						<hr class="menu-page__line menu-page__line--short" />
-						<i class="fa-solid fa-circle fa-sm"></i>
-						<hr class="menu-page__line menu-page__line--short" />
-					</div>
+        <section class="menu-section menu-section--large">
+          <!-- Category heading -->
+          <h3 class="menu-section__heading">Hot coffee</h3>
+          <!-- Decorative heading divider (line + icon + line) -->
+          <div class="menu-page__divider">
+            <hr class="menu-page__line menu-page__line--short" />
+            <i class="fa-solid fa-circle fa-sm"></i>
+            <hr class="menu-page__line menu-page__line--short" />
+          </div>
 
-					<!-- ================================================
+          <!-- ================================================
      						MENU SECTION (HOT COFFEE) – ITEMS CONTAINER
      					================================================= -->
-					<div class="menu-section__items menu-section__items--hot">
-						<!-- Individual product item -->
-						<article class="menu-item">
-							<!-- Left side: name + description + accent line -->
-							<div class="menu-item__content">
-								<!-- Product name -->
-								<h4 class="menu-item__name">Espresso</h4>
-								<!-- Product description -->
-								<p class="menu-item__description">Rich and bold single shot</p>
-								<!-- Decorative accent line under description -->
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<!-- Right side: product price container -->
-							<div class="menu-item__price">
-								<!-- Product price -->
-								<p class="menu-item__price-text">35 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Americano</h4>
-								<p class="menu-item__description">Espresso with hot water</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">40 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Cappucino</h4>
-								<p class="menu-item__description">Espresso with steamed milk and foam</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">45 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Latte</h4>
-								<p class="menu-item__description">Espresso with steamed milk</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">48 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Flat white</h4>
-								<p class="menu-item__description">Double espresso with microfoam</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">48 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Mocha</h4>
-								<p class="menu-item__description">Espresso with chocolate and steamed milk</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">52 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Macchiato</h4>
-								<p class="menu-item__description">Espresso marked with foam</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">42 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Cortado</h4>
-								<p class="menu-item__description">Equal parts espresso and steamed milk</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">45 kr</p>
-							</div>
-						</article>
-					</div>
-				</section>
-				<!-- END Menu section (Hot Coffee) -->
+          <div class="menu-section__items menu-section__items--hot">
+            <!-- Individual product item -->
+            <article class="menu-item">
+              <!-- Left side: name + description + accent line -->
+              <div class="menu-item__content">
+                <!-- Product name -->
+                <h4 class="menu-item__name">Espresso</h4>
+                <!-- Product description -->
+                <p class="menu-item__description">Rich and bold single shot</p>
+                <!-- Decorative accent line under description -->
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <!-- Right side: product price container -->
+              <div class="menu-item__price">
+                <!-- Product price -->
+                <p class="menu-item__price-text">35 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Americano</h4>
+                <p class="menu-item__description">Espresso with hot water</p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">40 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Cappucino</h4>
+                <p class="menu-item__description">
+                  Espresso with steamed milk and foam
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">45 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Latte</h4>
+                <p class="menu-item__description">Espresso with steamed milk</p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">48 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Flat white</h4>
+                <p class="menu-item__description">
+                  Double espresso with microfoam
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">48 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Mocha</h4>
+                <p class="menu-item__description">
+                  Espresso with chocolate and steamed milk
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">52 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Macchiato</h4>
+                <p class="menu-item__description">Espresso marked with foam</p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">42 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Cortado</h4>
+                <p class="menu-item__description">
+                  Equal parts espresso and steamed milk
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">45 kr</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- END Menu section (Hot Coffee) -->
 
-				<!-- =================================================
+        <!-- =================================================
      					MENU SECTION (COLD BREWS) - BLOCK CONTAINER
      				================================================== -->
-				<section class="menu-section menu-section--small">
-					<!-- Category heading -->
-					<h3 class="menu-section__heading">Cold brews</h3>
-					<!-- Decorative heading divider (line + icon + line) -->
-					<div class="menu-page__divider">
-						<hr class="menu-page__line menu-page__line--short" />
-						<i class="fa-solid fa-circle fa-sm"></i>
-						<hr class="menu-page__line menu-page__line--short" />
-					</div>
+        <section class="menu-section menu-section--small">
+          <!-- Category heading -->
+          <h3 class="menu-section__heading">Cold brews</h3>
+          <!-- Decorative heading divider (line + icon + line) -->
+          <div class="menu-page__divider">
+            <hr class="menu-page__line menu-page__line--short" />
+            <i class="fa-solid fa-circle fa-sm"></i>
+            <hr class="menu-page__line menu-page__line--short" />
+          </div>
 
-					<!-- ================================================
+          <!-- ================================================
      						MENU SECTION (COLD BREWS) – ITEMS CONTAINER
      					================================================= -->
-					<div class="menu-section__items menu-section__items--cold">
-						<!-- Individual product item -->
-						<article class="menu-item">
-							<!-- Left side: name + description + accent line -->
-							<div class="menu-item__content">
-								<!-- Product name -->
-								<h4 class="menu-item__name">Cold brew</h4>
-								<!-- Product description -->
-								<p class="menu-item__description">Smooth cold steeped coffee</p>
-								<!-- Decorative accent line under description -->
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<!-- Right side: product price container -->
-							<div class="menu-item__price">
-								<!-- Product price -->
-								<p class="menu-item__price-text">45 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Iced latte</h4>
-								<p class="menu-item__description">Espresso and cold milk over ice</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">50 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Nitro cold brew</h4>
-								<p class="menu-item__description">Infused with nitrogen for a creamy texture</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">55 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Iced mocha</h4>
-								<p class="menu-item__description">Iced coffee with chocolate</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">55 kr</p>
-							</div>
-						</article>
-					</div>
-				</section>
-				<!-- END Menu section (Cold Brews) -->
+          <div class="menu-section__items menu-section__items--cold">
+            <!-- Individual product item -->
+            <article class="menu-item">
+              <!-- Left side: name + description + accent line -->
+              <div class="menu-item__content">
+                <!-- Product name -->
+                <h4 class="menu-item__name">Cold brew</h4>
+                <!-- Product description -->
+                <p class="menu-item__description">Smooth cold steeped coffee</p>
+                <!-- Decorative accent line under description -->
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <!-- Right side: product price container -->
+              <div class="menu-item__price">
+                <!-- Product price -->
+                <p class="menu-item__price-text">45 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Iced latte</h4>
+                <p class="menu-item__description">
+                  Espresso and cold milk over ice
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">50 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Nitro cold brew</h4>
+                <p class="menu-item__description">
+                  Infused with nitrogen for a creamy texture
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">55 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Iced mocha</h4>
+                <p class="menu-item__description">Iced coffee with chocolate</p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">55 kr</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- END Menu section (Cold Brews) -->
 
-				<!-- =========================================================
+        <!-- =========================================================
      					MENU SECTION (PASTRIES & SWEETS) - BLOCK CONTAINER
      				========================================================== -->
-				<section class="menu-section menu-section--medium">
-					<!-- Category heading -->
-					<h3 class="menu-section__heading">Pastries & sweets</h3>
-					<!-- Decorative heading divider (line + icon + line) -->
-					<div class="menu-page__divider">
-						<hr class="menu-page__line menu-page__line--long" />
-						<i class="fa-solid fa-circle fa-sm"></i>
-						<hr class="menu-page__line menu-page__line--long" />
-					</div>
+        <section class="menu-section menu-section--medium">
+          <!-- Category heading -->
+          <h3 class="menu-section__heading">Pastries & sweets</h3>
+          <!-- Decorative heading divider (line + icon + line) -->
+          <div class="menu-page__divider">
+            <hr class="menu-page__line menu-page__line--long" />
+            <i class="fa-solid fa-circle fa-sm"></i>
+            <hr class="menu-page__line menu-page__line--long" />
+          </div>
 
-					<!-- ========================================================
+          <!-- ========================================================
      						MENU SECTION (PASTRIES & SWEETS) – ITEMS CONTAINER
      					========================================================= -->
-					<div class="menu-section__items menu-section__items--sweet">
-						<!-- Individual product item -->
-						<article class="menu-item">
-							<!-- Left side: name + description + accent line -->
-							<div class="menu-item__content">
-								<!-- Product name -->
-								<h4 class="menu-item__name">Croissant</h4>
-								<!-- Product description -->
-								<p class="menu-item__description">Buttery, flaky French pastry</p>
-								<!-- Decorative accent line under description -->
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<!-- Right side: product price container -->
-							<div class="menu-item__price">
-								<!-- Product price -->
-								<p class="menu-item__price-text">32 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Wienerbröd</h4>
-								<p class="menu-item__description">Flaky pastry with vanilla custard filling</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">35 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Chocolate muffin</h4>
-								<p class="menu-item__description">Rich, with a deep chocolate flavor</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">42 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Blueberry muffin</h4>
-								<p class="menu-item__description">Freshly baked with real blueberries</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">42 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Cinnamon bun</h4>
-								<p class="menu-item__description">Soft bun with sweet cinnamon swirls</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">38 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Lemon cheesecake</h4>
-								<p class="menu-item__description">Silky cheesecake with fresh lemon flavor.</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">40 kr</p>
-							</div>
-						</article>
-					</div>
-				</section>
-				<!-- END Menu section (Pastries & Sweets) -->
+          <div class="menu-section__items menu-section__items--sweet">
+            <!-- Individual product item -->
+            <article class="menu-item">
+              <!-- Left side: name + description + accent line -->
+              <div class="menu-item__content">
+                <!-- Product name -->
+                <h4 class="menu-item__name">Croissant</h4>
+                <!-- Product description -->
+                <p class="menu-item__description">
+                  Buttery, flaky French pastry
+                </p>
+                <!-- Decorative accent line under description -->
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <!-- Right side: product price container -->
+              <div class="menu-item__price">
+                <!-- Product price -->
+                <p class="menu-item__price-text">32 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Wienerbröd</h4>
+                <p class="menu-item__description">
+                  Flaky pastry with vanilla custard filling
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">35 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Chocolate muffin</h4>
+                <p class="menu-item__description">
+                  Rich, with a deep chocolate flavor
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">42 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Blueberry muffin</h4>
+                <p class="menu-item__description">
+                  Freshly baked with real blueberries
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">42 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Cinnamon bun</h4>
+                <p class="menu-item__description">
+                  Soft bun with sweet cinnamon swirls
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">38 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Lemon cheesecake</h4>
+                <p class="menu-item__description">
+                  Silky cheesecake with fresh lemon flavor.
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">40 kr</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- END Menu section (Pastries & Sweets) -->
 
-				<!-- =========================================================
+        <!-- =========================================================
      					MENU SECTION (SANDWICHES & BITES) - BLOCK CONTAINER
      				========================================================== -->
-				<section class="menu-section menu-section--small">
-					<!-- Category heading -->
-					<h3 class="menu-section__heading">Sandwiches & bites</h3>
-					<!-- Decorative heading divider (line + icon + line) -->
-					<div class="menu-page__divider">
-						<hr class="menu-page__line menu-page__line--long" />
-						<i class="fa-solid fa-circle fa-sm"></i>
-						<hr class="menu-page__line menu-page__line--long" />
-					</div>
+        <section class="menu-section menu-section--small">
+          <!-- Category heading -->
+          <h3 class="menu-section__heading">Sandwiches & bites</h3>
+          <!-- Decorative heading divider (line + icon + line) -->
+          <div class="menu-page__divider">
+            <hr class="menu-page__line menu-page__line--long" />
+            <i class="fa-solid fa-circle fa-sm"></i>
+            <hr class="menu-page__line menu-page__line--long" />
+          </div>
 
-					<!-- ========================================================
+          <!-- ========================================================
      						MENU SECTION (SANDWICHES & BITES) – ITEMS CONTAINER
      					========================================================= -->
-					<div class="menu-section__items menu-section__items--sandwiches">
-						<!-- Individual product item -->
-						<article class="menu-item">
-							<!-- Left side: name + description + accent line -->
-							<div class="menu-item__content">
-								<!-- Product name -->
-								<h4 class="menu-item__name">Breakfast Sandwich</h4>
-								<!-- Product description -->
-								<p class="menu-item__description">Egg, cheese, and bacon on a croissant</p>
-								<!-- Decorative accent line under description -->
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<!-- Right side: product price container -->
-							<div class="menu-item__price">
-								<!-- Product price -->
-								<p class="menu-item__price-text">75 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Avocado Toast</h4>
-								<p class="menu-item__description">Smashed avocado on sourdough</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">80 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Caprese Panini</h4>
-								<p class="menu-item__description">Mozzarella, tomato, and basil</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">90 kr</p>
-							</div>
-						</article>
-						<article class="menu-item">
-							<div class="menu-item__content">
-								<h4 class="menu-item__name">Turkey & Swiss</h4>
-								<p class="menu-item__description">With lettuce and honey mustard</p>
-								<div class="menu-item__accent-line"></div>
-							</div>
-							<div class="menu-item__price">
-								<p class="menu-item__price-text">85 kr</p>
-							</div>
-						</article>
-					</div>
-				</section>
-				<!-- END Menu section (Sandwiches & Bites) -->
+          <div class="menu-section__items menu-section__items--sandwiches">
+            <!-- Individual product item -->
+            <article class="menu-item">
+              <!-- Left side: name + description + accent line -->
+              <div class="menu-item__content">
+                <!-- Product name -->
+                <h4 class="menu-item__name">Breakfast Sandwich</h4>
+                <!-- Product description -->
+                <p class="menu-item__description">
+                  Egg, cheese, and bacon on a croissant
+                </p>
+                <!-- Decorative accent line under description -->
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <!-- Right side: product price container -->
+              <div class="menu-item__price">
+                <!-- Product price -->
+                <p class="menu-item__price-text">75 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Avocado Toast</h4>
+                <p class="menu-item__description">
+                  Smashed avocado on sourdough
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">80 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Caprese Panini</h4>
+                <p class="menu-item__description">
+                  Mozzarella, tomato, and basil
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">90 kr</p>
+              </div>
+            </article>
+            <article class="menu-item">
+              <div class="menu-item__content">
+                <h4 class="menu-item__name">Turkey & Swiss</h4>
+                <p class="menu-item__description">
+                  With lettuce and honey mustard
+                </p>
+                <div class="menu-item__accent-line"></div>
+              </div>
+              <div class="menu-item__price">
+                <p class="menu-item__price-text">85 kr</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- END Menu section (Sandwiches & Bites) -->
 
-				<!-- ============================
+        <!-- ============================
           				ADDITIONAL MENU NOTE
          			============================= -->
-				<div class="menu-page__note">
-					<!-- Pricing information -->
-					<p class="menu-page__note-text">All prices in SEK. Ask about our daily specials!</p>
-				</div>
-				<!-- END Additional menu note -->
-			</div>
-		</main>
-		<!-- END Menu page wrapper -->
+        <div class="menu-page__note">
+          <!-- Pricing information -->
+          <p class="menu-page__note-text">
+            All prices in SEK. Ask about our daily specials!
+          </p>
+        </div>
+        <!-- END Additional menu note -->
+      </div>
 
-		<!-- footer - START -->
-		<footer class="site-footer">
-			<div class="footer-container">
-				<!-- Brand -->
-				<div class="footer-brand">
-					<h2>NORA<span>CAFE</span></h2>
-					<p>SWEET CAFE HOUSE</p>
-				</div>
+      <!-- Section -Contact us - START  -->
+      <section class="contact-section">
+        <div class="contact-container" id="contactUs">
+          <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              /><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              /><br />
+              <input
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+              /><br /><br />
+              <button type="submit" class="submitNow">Submit Now</button>
+            </form>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71330.43351911647!2d12.650244731413267!3d56.03467210335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46522d7a50a22925%3A0x4019078290e7a90!2sHelsingborg!5e0!3m2!1sen!2sse!4v1771934467288!5m2!1sen!2sse"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- Section -Contact us - END  -->
+    </main>
+    <!-- END Menu page wrapper -->
 
-				<!-- Address -->
-				<div class="footer-address">
-					<p>500 Terry Francine Street</p>
-					<p>Helsingborg City</p>
-					<p>Tel: 123-456-7890</p>
-				</div>
+    <!-- footer - START -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>NORA<span>CAFE</span></h2>
+          <p>SWEET CAFE HOUSE</p>
+        </div>
 
-				<!-- Opening Hours + Social -->
-				<div class="footer-hours">
-					<p>Mon - Fri: 7am - 10pm</p>
-					<p>Saturday: 8am - 11pm</p>
-					<p>Sunday: 8am - 10pm</p>
-				</div>
+        <!-- Address -->
+        <div class="footer-address">
+          <p>500 Terry Francine Street</p>
+          <p>Helsingborg City</p>
+          <p>Tel: 123-456-7890</p>
+        </div>
 
-				<div class="social-icons">
-					<a href="https://www.facebook.com/" target="_blank"><img src="/Images/facebook.svg" alt="Facebook" /></a>
-					<a href="https://www.instagram.com/" target="_blank"><img src="/Images/insta.svg" alt="Instagram" /></a>
-				</div>
+        <!-- Opening Hours + Social -->
+        <div class="footer-hours">
+          <p>Mon - Fri: 7am - 10pm</p>
+          <p>Saturday: 8am - 11pm</p>
+          <p>Sunday: 8am - 10pm</p>
+        </div>
 
-				<!-- Newsletter -->
-				<div class="footer-newsletter">
-					<h3>Let's be friends and have eggs benedict</h3>
-					<form>
-						<label>Email *</label>
-						<input type="email" placeholder="" required />
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="/Images/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="/Images/insta.svg" alt="Instagram"
+          /></a>
+        </div>
 
-						<div class="newsletter-bottom">
-							<div class="checkbox-group">
-								<input type="checkbox" id="subscribe" required />
-								<label for="subscribe"> Yes, subscribe me to your newsletter. * </label>
-							</div>
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h3>Let's be friends and have eggs benedict</h3>
+          <form>
+            <label>Email *</label>
+            <input type="email" placeholder="" required />
 
-							<button type="submit">Subscribe</button>
-						</div>
-					</form>
-				</div>
-			</div>
+            <div class="newsletter-bottom">
+              <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" required />
+                <label for="subscribe">
+                  Yes, subscribe me to your newsletter. *
+                </label>
+              </div>
 
-			<div class="footer-bottom">© 2026 by cafe Nora. Powered and secured by <a href="#">Nora</a></div>
-		</footer>
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-		<!-- footer - END -->
-	</body>
+      <div class="footer-bottom">
+        © 2026 by cafe Nora. Powered and secured by <a href="#">Nora</a>
+      </div>
+    </footer>
+
+    <!-- footer - END -->
+  </body>
 </html>
