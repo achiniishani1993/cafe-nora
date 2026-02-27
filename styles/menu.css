@@ -8,17 +8,39 @@
 *::after {
 	box-sizing: border-box;
 }
-
 /* ============================
     BASE STYLES
    ============================ */
-
-/* Basic page setup */
 body {
-	min-height: 100vh;
+	margin: 0;
 	font-family: "Cormorant Garamond", serif;
+	display: grid;
+
+	min-height: 100vh;
+
+	grid-template-areas:
+		"nav "
+		"main"
+		"footer";
+
+	grid-template-rows: 100px 1fr auto;
+	grid-template-columns: 100%;
 }
 
+nav {
+	grid-area: nav;
+}
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.contact-section {
+	padding-bottom: 50px;
+}
 /* ==============================
     MENU PAGE - MAIN LAYOUT
    ============================== */
@@ -29,6 +51,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	font-family: "Cormorant Garamond", serif;
 	font-style: normal;
 	background-color: #ffffff;
 }
