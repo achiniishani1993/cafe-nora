@@ -16,6 +16,7 @@
 /* Basic page setup */
 body {
 	min-height: 100vh;
+	font-family: "Cormorant Garamond", serif;
 }
 
 /* ==============================
@@ -28,7 +29,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: "Cormorant Garamond", serif;
 	font-style: normal;
 	background-color: #ffffff;
 }
@@ -43,9 +43,9 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 48vw;
+	max-width: 920px;
 	width: 100%;
-	min-height: 21vh;
+	min-height: 210px;
 }
 
 /* ==============================
@@ -80,12 +80,12 @@ body {
 
 /* Modifier for short decorative line */
 .menu-page__line--short {
-	width: 6.3vw;
+	width: 120px;
 }
 
 /* Modifier for long decorative line */
 .menu-page__line--long {
-	width: 9.4vw;
+	width: 180px;
 }
 
 /* Center circle icon */
@@ -148,24 +148,24 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 60vw;
+	max-width: 1150px;
 	width: 100%;
 	margin-top: 5rem;
 }
 
 /* Modifier for Hot Coffee section */
 .menu-section--large {
-	min-height: 73vh;
+	min-height: 733px;
 }
 
 /* Modifier for Cold Brews and Sandwiches & Bites section */
 .menu-section--small {
-	min-height: 35vh;
+	min-height: 351px;
 }
 
 /* Modifier for Pastries & Sweets section */
 .menu-section--medium {
-	min-height: 54vh;
+	min-height: 542px;
 }
 
 /* ============================
@@ -206,9 +206,9 @@ body {
 	display: flex;
 	justify-content: space-around;
 	overflow: hidden;
-	max-width: 27.5vw;
+	max-width: 528px;
 	width: 100%;
-	min-height: 17vh;
+	min-height: 160px;
 	margin-top: 2.5rem;
 	border-style: solid;
 	border-color: rgba(58, 47, 42, 0.1);
@@ -254,7 +254,7 @@ body {
 .menu-item__accent-line {
 	position: relative;
 	margin: 0;
-	width: 2.5vw;
+	width: 48px;
 	height: 2px;
 	background-color: #14f25d;
 	border-radius: 3px;
@@ -266,8 +266,8 @@ body {
 	position: absolute;
 	top: 0;
 	height: 2px;
-	left: 2.5vw;
-	width: 21.5vw;
+	left: 48px;
+	width: 410px;
 	background-color: #14f25d;
 	border-radius: 3px;
 	transform: scaleX(0);
@@ -312,9 +312,9 @@ body {
 	align-items: center;
 	margin-top: 5rem;
 	margin-bottom: 5rem;
-	max-width: 78vw;
+	max-width: 1500px;
 	width: 100%;
-	min-height: 10vh;
+	min-height: 100px;
 	border-bottom: 1px solid #3a2f2a;
 }
 
