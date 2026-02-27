@@ -41,9 +41,9 @@ footer {
   grid-area: footer;
 }
 
-.contact-section {               /* add space between gridcontainer and contact-section */
+.contact-section {
+  /* add space between gridcontainer and contact-section */
   padding-top: 80px;
-  
 }
 /* Header css - START */
 
