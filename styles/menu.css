@@ -3,7 +3,11 @@
    ============================== */
 
 /* Ensures padding and border are included in total width/height */
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* ============================
     BASE STYLES
    ============================ */
