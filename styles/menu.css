@@ -204,7 +204,7 @@ body {
 /* Menu item card styling */
 .menu-item {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	overflow: hidden;
 	max-width: 528px;
 	width: 100%;
@@ -227,7 +227,7 @@ body {
 
 /* Left side content area (name + description) */
 .menu-item__content {
-	width: 60%;
+	width: 70%;
 }
 
 /* Product name */
