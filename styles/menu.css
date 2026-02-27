@@ -8,6 +8,7 @@
 *::after {
 	box-sizing: border-box;
 }
+
 /* ============================
     BASE STYLES
    ============================ */
@@ -41,6 +42,7 @@ footer {
 .contact-section {
 	padding-bottom: 50px;
 }
+
 /* ==============================
     MENU PAGE - MAIN LAYOUT
    ============================== */
